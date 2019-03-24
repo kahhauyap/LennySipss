@@ -21,10 +21,9 @@
   
   /* Change the color of links on hover */
 .navbar a:hover {
-    background-color: #ddd;
     border-radius: 10px;
-    color: black;
     font-weight: bold;
+    text-shadow: rgba(255, 255, 255, .6) 0px 0px 5px;
 }
   
   /* Add a color to the active/current link */
