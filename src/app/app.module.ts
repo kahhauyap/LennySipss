@@ -8,6 +8,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 import { BarComponent } from './bar/bar.component';
+import { BlogComponent } from './blog/blog.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { BarComponent } from './bar/bar.component';
     NavigationBarComponent,
     CarouselComponent,
     AboutComponent,
-    BarComponent
+    BarComponent,
+    BlogComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
