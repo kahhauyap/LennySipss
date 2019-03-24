@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+bodys {
+    font-family: 'Oswald', sans-serif;
+}
+/* Carousel Slide*/
+.carousel-inner {
+    width: 100%;
+    height: 700px;
+  }
+  
+  .carousel-item {
+    padding: 40px 55px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    display: block !important;
+  }
+  
+  .carousel-item.active {
+    z-index: 1;
+    opacity: 1;
+    transition-delay: .3s;
+    transform: none;
+    animation: ease-in-out .3s;
+    animation-delay: .3s;
+  }
+  
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: none;
+    }
+  }
