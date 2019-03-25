@@ -1,0 +1,37 @@
+<p style="margin-top:80px;">
+
+</p>
+<h1 style="color:white; text-align:center; padding-top: 50px;">Welcome to the Bar</h1>
+<div id="menu">
+  <div class="overlay">
+    <div *ngIf="drinks">
+      <div *ngFor="let drink of drinks">
+        <div class="card" (click)="onClick()">
+
+          <img class="card-img-top" src={{drink.imageUrl}}>
+          <div class="card-body">
+            <h5 class="card-title" style="text-align:center">{{drink.name}}</h5>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="drinks">
+        <div *ngFor="let drink of drinks">
+          <div class="card">
+            <img class="card-img-top" src={{drink.imageUrl}}>
+            <div class="card-body">
+              <h5 class="card-title" style="text-align:center">{{drink.name}}</h5>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="drinks">
+          <div *ngFor="let drink of drinks">
+            <div class="card">
+              <img class="card-img-top" src={{drink.imageUrl}}>
+              <div class="card-body">
+                <h5 class="card-title" style="text-align:center">{{drink.name}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
