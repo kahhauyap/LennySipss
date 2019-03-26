@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinkService } from '../drink.service';
 import { Drink } from '../drink';
-import { CardComponent } from '../card/card.component'
-
 
 @Component({
   selector: 'app-menu',

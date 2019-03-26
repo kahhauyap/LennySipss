@@ -17,15 +17,16 @@ export class ModalComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    for (let prop in changes) {
-      let change = changes[prop];
-      let curVal = JSON.stringify(change.currentValue);
-      let prevVal = JSON.stringify(change.previousValue);
-      let changeLog = `${prop}: currentValue = ${curVal}, previousValue = ${prevVal}`
-      console.log(changeLog);
-    }
+    /*
+        for (let prop in changes) {
+          let change = changes[prop];
+          let curVal = JSON.stringify(change.currentValue);
+          let prevVal = JSON.stringify(change.previousValue);
+          let changeLog = `${prop}: currentValue = ${curVal}, previousValue = ${prevVal}`
+        }
+    */
   }
   clicked(drink: Drink) {
-    console.log(drink.name);
+    console.log(drink.videoUrl);
   }
 }

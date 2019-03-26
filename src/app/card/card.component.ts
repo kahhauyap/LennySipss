@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Drink } from '../drink';
-import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-card',
