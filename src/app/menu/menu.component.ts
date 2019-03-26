@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinkService } from '../drink.service';
 import { Drink } from '../drink';
+import { CardComponent } from '../card/card.component'
 
 
 @Component({
@@ -32,5 +33,6 @@ export class MenuComponent implements OnInit {
   onClick(drink: Drink): void {
     if (!this.isOpen) this.selectedDrink = drink;
     this.isOpen = !this.isOpen;
+    //  console.log("selectedDrink: " + this.selectedDrink.name);
   }
 }
