@@ -3,8 +3,6 @@ import { Observable, of } from 'rxjs';
 import { Drinks } from './menu';
 import { Drink } from './drink';
 
-
-
 @Injectable({
   providedIn: 'root'
 })

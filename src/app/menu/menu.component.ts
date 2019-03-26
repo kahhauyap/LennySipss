@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DrinkService } from '../drink.service';
 import { Drink } from '../drink';
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -11,8 +12,13 @@ import { Drink } from '../drink';
 export class MenuComponent implements OnInit {
 
   drinks: Drink[];
+  selectedDrink: Drink;
+  isOpen: boolean;
 
-  constructor(private drinkService: DrinkService) { }
+  constructor(private drinkService: DrinkService) {
+    this.selectedDrink = { id: 0, name: '', imageUrl: '', videoUrl: '', description: '' };
+    this.isOpen = false;
+  }
 
   ngOnInit() {
     this.getDrinks();
@@ -23,7 +29,8 @@ export class MenuComponent implements OnInit {
       .subscribe(drinks => this.drinks = drinks);
   }
 
-  onClick(): void {
-    alert("yo!");
+  onClick(drink: Drink): void {
+    if (!this.isOpen) this.selectedDrink = drink;
+    this.isOpen = !this.isOpen;
   }
 }

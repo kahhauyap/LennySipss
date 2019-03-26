@@ -1,0 +1,31 @@
+.modal-body, .modal-header, .modal-footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal-header {
+    font-weight: bold;
+}
+
+video:focus {
+    outline: none;
+    border: 0;
+}
+
+hr {
+    width: 80% !important;
+    background:white;
+}
+
+#modal-trigger {
+    background:white;
+    border: black solid 2px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+    margin: auto;
+}

@@ -1,0 +1,29 @@
+<button *ngIf="drink" id="modal-trigger" class="col-12" data-toggle="modal"
+  data-target="#exampleModalCenter">Recipe</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title col-12" id="exampleModalLongTitle"><strong>{{drink.name}}</strong></h5>
+      </div>
+      <div class="modal-body">
+
+        <video width="100%" height="350" controls>
+          <source
+            src="https://scontent.cdninstagram.com/vp/f6003f43ce7799a2ec4ebae443ae8ccf/5C9C3781/t50.2886-16/55692515_2200198196976628_3598319468830261248_n.mp4?_nc_ht=scontent.cdninstagram.com"
+            type="video/mp4">
+        </video>
+      </div>
+
+      <div class="modal-body">
+        <hr style="background:white;">
+        {{drink.description}}
+      </div>
+
+    </div>
+  </div>
+</div>

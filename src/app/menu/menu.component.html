@@ -6,11 +6,13 @@
   <div class="overlay">
     <div *ngIf="drinks">
       <div *ngFor="let drink of drinks">
-        <div class="card" (clicks)="onClick()" data-toggle="modal" data-target="#exampleModalCenter">
+        <!-- Trigger modal -->
+        <div class="card">
           <img class="card-img-top" src={{drink.imageUrl}}>
           <div class="card-body">
             <h5 class="card-title" style="text-align:center">{{drink.name}}</h5>
-            <!-- Button trigger modal -->
+            <!-- Trigger modal -->
+            <app-modal *ngIf="selectedDrink" [drink]="selectedDrink" (click)="onClick(drink)"></app-modal>
           </div>
         </div>
 
