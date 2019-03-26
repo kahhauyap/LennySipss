@@ -34,6 +34,7 @@ hr {
     background-color: white;
     width: 10%;
 }
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
