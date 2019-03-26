@@ -4,7 +4,7 @@ h1 {
 }
 
 #menu {
-    margin:auto; 
+    margin: auto; 
     width: 70%;
     padding-top: 50px;
 }
@@ -16,7 +16,7 @@ h1 {
 }
 
 .card {
-    width: 400px; 
+    width: 30%; 
     border-radius: 8px; 
     margin: auto;
     float: left;
