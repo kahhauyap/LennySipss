@@ -16,7 +16,9 @@ button {
     font-weight: bold;
     font-size: 18px;
     margin-left: 5px;
+    margin-top: 15px;
     border-radius: 3px;
+    display: block;
 }
 
 button:hover {
@@ -25,15 +27,11 @@ button:hover {
     transition-duration: .3s;
 }
 
-.header {
-    text-align: center; 
-    padding-top:50px; 
-    color:white;
-}
-
 .header-text {
     text-align: left;
     color:white;
     margin-left: 5px;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
 }
 
