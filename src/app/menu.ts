@@ -23,7 +23,7 @@ export const Drinks: Drink[] = [
         id: 4, name: 'Stranger Waffles',
         imageUrl: 'https://scontent-iad3-1.cdninstagram.com/vp/dea9d2865aaff7e5e6a845ed5f824c19/5D475039/t51.2885-15/sh0.08/e35/s640x640/53357873_141348736912186_1784167965277134099_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com',
         videoUrl: 'https://scontent.cdninstagram.com/vp/6b8d9692050734081e0a3f4174fc233c/5C9D39E4/t50.2886-16/56128357_400289380768915_34309942517170176_n.mp4?_nc_ht=scontent.cdninstagram.com',
-        description: 'Happy National Waffle Day! I had inspiration from the show Stranger Things. I decided to make a strawberry flavored cocktail with some waffles on the side in honor of the holiday. It was incredibly easy to make with the help of some cocktailartists mixers. I used strawberry margarita and lime juice.'
+        description: 'Happy National Waffle Day! I had inspiration from the show Stranger Things. I decided to make a strawberry flavored cocktail with some waffles on the side in honor of the holiday. I used strawberry margarita and lime juice.'
     },
     {
         id: 5, name: 'Sweet Spring Break',

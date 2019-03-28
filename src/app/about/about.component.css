@@ -97,11 +97,11 @@ a {
     font-weight: bold;
     font-size: 20px;
     margin-left: 20px;
+    border-radius: 3px;
 }
 a:hover {
     background: rgba(0, 0, 0, 1);
     color: white;
-    
     transition-duration: .3s;
 }
 

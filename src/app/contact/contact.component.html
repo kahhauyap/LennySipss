@@ -1,0 +1,26 @@
+<h1 class="header">Contact</h1>
+
+<form>
+  <h3 class="header-text">Want to get in touch?</h3>
+  <div class="form-row">
+    <div class="col-6">
+      <input type="text" [(ngModel)]="name" type="text" class="form-control" placeholder="Name" name="name"
+        autocomplete="off">
+    </div>
+    <div class="col-6">
+      <input type="text" [(ngModel)]="email" type="text" class="form-control" placeholder="Email" name="email"
+        autocomplete="off">
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="col-12">
+      <textarea rows="5" [(ngModel)]="message" type="text" class="form-control" placeholder="Message"
+        name="message"></textarea>
+    </div>
+  </div>
+  <br>
+
+  <button (click)="onSubmit()">Send</button>
+
+</form>

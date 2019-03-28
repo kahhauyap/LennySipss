@@ -1,0 +1,39 @@
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+form {
+    padding-top: 30px;
+    margin: auto;
+    width: 40%;
+}
+
+button {
+    background: rgb(22, 22, 22);
+    border: white solid 2px;
+    padding: 3px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
+    transition-duration: .3s;
+}
+
+.header {
+    text-align: center; 
+    padding-top:50px; 
+    color:white;
+}
+
+.header-text {
+    text-align: left;
+    color:white;
+    margin-left: 5px;
+}
+
