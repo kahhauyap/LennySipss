@@ -77,7 +77,7 @@ hr {
   and (-webkit-min-device-pixel-ratio: 1) { 
 
     ngb-carousel {
-        height: 650px !important;
+        height: 660px !important;
     }
     #slide {
         height: 75%;
@@ -91,5 +91,6 @@ hr {
     .carousel-caption {
         width: 34%;
         padding-top: 8%;
+        padding-right: 1%;
     }
 }
