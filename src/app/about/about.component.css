@@ -113,6 +113,7 @@
         margin-left: 250px;
         width: 300px;
         height: 300px;
+        margin-right: 150px;
     }
 
     .left-align {
@@ -120,9 +121,17 @@
     }
 
     #welcome-text {
-        font-size: 30px;
+        font-size: 40px;
     }
 
+    #bio {
+        font-size: 28px;
+    }
+
+    #drink-pic, #drink-review {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 h1 {
@@ -162,5 +171,7 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: rgba(255, 255, 255, .6) 0px 0px 7px;
 }
+
+
 
 
