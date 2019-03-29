@@ -1,11 +1,13 @@
 <ngb-carousel *ngIf="drinks" [showNavigationArrows]="!showNavigationArrows"
   [showNavigationIndicators]="!showNavigationIndicators">
   <ng-template ngbSlide *ngFor="let drink of drinks">
-    <img [src]="drink.imageUrl" alt="Random slide">
-    <div class="carousel-caption">
-      <h3><strong>{{drink.name}}</strong></h3>
-      <hr>
-      <p>{{drink.description}} </p>
+    <div id="slide">
+      <img id="drink-image" [src]="drink.imageUrl" alt="drink slide" (click)="prev()">
+      <div class="carousel-caption">
+        <h3 id="drink-name"><strong>{{drink.name}}</strong></h3>
+        <hr>
+        <p>{{drink.description}} </p>
+      </div>
     </div>
   </ng-template>
 </ngb-carousel>
