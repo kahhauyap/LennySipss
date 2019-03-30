@@ -25,9 +25,9 @@ hr {
 }
 
 #modal-trigger {
-    background:white;
-    border: black solid 2px;
-    color: black;
+    background:black;
+    border: white solid 2px;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     margin-left: 20px;
@@ -37,43 +37,18 @@ hr {
 }
 
 #modal-trigger:hover {
-    background: rgba(0, 0, 0, 1);
-    color: white;
+    background: rgb(255, 255, 255);
+    color: black;
     transition-duration: .3s;
 }
 
-#modal-trigger {
-    background:black;
-    border: white solid 2px;
-    color: white;
-}
-
-#modal-trigger:hover {
-    background: rgb(255, 255, 255);
-    color: black;
-}
 #modal-trigger:focus{
     outline:none;
 }
 
 video {
-    height: 400px;
     border: rgb(255, 255, 255, .3) 1px solid;
     -webkit-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.2);
     -moz-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.2);
     box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.2);
 }
-
-
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-      video {
-          height:350px;
-          width: 700px;
-      }
-      .modal-content {
-          height: 480px;
-      }
-  }
