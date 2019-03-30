@@ -75,14 +75,22 @@ hr {
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
+
+    ngb-carousel {
+        height: 660px !important;
+    }
+    #slide {
+        height: 75%;
+    }
     .carousel-caption {
-        font-size: 27px;
+        font-size: 25px;
     }
     img {
         width: 50%;
     }
     .carousel-caption {
-        width: 30%;
-        padding-top: 12%;
+        width: 34%;
+        padding-top: 8%;
+        padding-right: 1%;
     }
 }

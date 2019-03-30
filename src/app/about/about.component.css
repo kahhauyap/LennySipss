@@ -105,26 +105,6 @@
     transition-duration: .3s;
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    #logo {
-        margin-left: 250px;
-        width: 300px;
-        height: 300px;
-    }
-
-    .left-align {
-        text-align: left;
-    }
-
-    #welcome-text {
-        font-size: 30px;
-    }
-
-}
-
 h1 {
     font-family: 'Oswald', sans-serif;
 }
@@ -162,5 +142,78 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: rgba(255, 255, 255, .6) 0px 0px 7px;
 }
+
+.pad-bottom {
+    padding-bottom: 20px;
+}
+
+#about-back {
+    height:560px; 
+    text-align:center;
+    background: rgb(22, 22, 22);
+    position: relative;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #logo {
+        margin-left: 250px;
+        width: 300px;
+        height: 300px;
+        margin-right: 150px;
+    }
+
+    #cocktail-header {
+        padding-right: 200px;   
+    }
+
+    .left-align {
+        text-align: left;
+    }
+
+    #welcome-text {
+        font-size: 40px;
+    }
+
+    #bio {
+        font-size: 28px;
+    }
+
+    #drink-pic, #drink-review {
+        width: 330px;
+        height: 330px;
+    }
+
+    #white-back, #grey-back {
+        height: 450px;
+    }
+
+    #black-back {
+        height: 480px;
+    }
+
+    #about-cocktails p, #about-reviews p {
+        font-size: 26px !important;
+    }
+
+    #about-back {
+        height: 520px !important;
+    }
+
+    #ig-link {
+        margin-top: 25px;
+    }
+
+    .header {
+        padding-top: 30px;
+    }
+
+    #review-btn {
+        margin-right: 60px;
+    }
+}
+
 
 
