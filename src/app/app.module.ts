@@ -13,6 +13,7 @@ import { ModalComponent } from './modal/modal.component';
 import { CardComponent } from './card/card.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { ReviewsModule } from './reviews/reviews.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    ReviewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

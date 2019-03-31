@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BarComponent } from './bar/bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ReviewsComponent } from './reviews/reviews/reviews.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'bar', component: BarComponent },
+  { path: 'reviews', component: ReviewsComponent }
 ];
 
 @NgModule({

@@ -1,0 +1,8 @@
+<div style="padding-top:80px;"></div>
+<div style="background: rgb(207, 149, 149);">
+    <div *ngIf="reviews">
+        <div *ngFor="let review of reviews; index as i">
+            <app-review-card [review]="review" [background]="i % 2 == 0? 'white-back' : 'grey-back'"></app-review-card>
+        </div>
+    </div>
+</div>
