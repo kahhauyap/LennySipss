@@ -1,8 +1,38 @@
-<div style="padding-top:80px;"></div>
-<div style="background: rgb(207, 149, 149);">
-    <div *ngIf="reviews">
-        <div *ngFor="let review of reviews; index as i">
-            <app-review-card [review]="review" [background]="i % 2 == 0? 'white-back' : 'grey-back'"></app-review-card>
+<div class="col-4">
+    <input id="search-bar2" type="text" [(ngModel)]="searchText" (input)="search()" (keydown.enter)="onKeydown($event)"
+        class="search-nav form-control" type="text" placeholder="Drink, Restaurant, Bar" name="search"
+        autocomplete="off">
+</div>
+
+
+
+
+
+
+<div class="masthead">
+    <div class="masthead-text">
+        Restaurant and Bar Reviews
+    </div>
+
+</div>
+
+
+<div>
+    <div>
+        <div class="col-4">
+            <input id="search-bar" type="text" [(ngModel)]="searchText" (input)="search()"
+                (keydown.enter)="onKeydown($event)" class="search form-control" type="text"
+                placeholder="Drink, Restaurant, Bar" name="search" autocomplete="off" [class.fixed]="fixed"
+                (scroll)="onWindowScroll($event);">
         </div>
     </div>
+    <div *ngIf=" reviews">
+        <div *ngFor="let review of filteredReviews; index as i">
+            <app-review-card [review]="review" [background]="i % 2 == 0? 'white-back' : 'grey-back'">
+            </app-review-card>
+        </div>
+    </div>
+</div>
+<div class="footer">
+
 </div>

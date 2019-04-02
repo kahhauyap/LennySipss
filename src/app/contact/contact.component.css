@@ -35,3 +35,8 @@ button:hover {
     font-family: 'Oswald', sans-serif;
 }
 
+.form-control:focus {
+    border-color: rgba(104, 104, 104, .3);
+    box-shadow:0 6px 15px 0 rgba(161, 161, 161, 0.33);
+}
+
