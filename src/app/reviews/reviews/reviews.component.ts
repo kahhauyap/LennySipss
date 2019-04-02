@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ReviewService } from '../../reviews.service';
-import { Review } from '../../review';
+import { ReviewService } from '../reviews.service';
+import { Review } from '../review';
 
 import { Inject, HostListener } from "@angular/core";
 import { DOCUMENT } from "@angular/platform-browser";

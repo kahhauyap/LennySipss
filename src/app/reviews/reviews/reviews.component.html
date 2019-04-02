@@ -1,12 +1,7 @@
 <div class="col-4">
-    <input id="search-bar2" type="text" [(ngModel)]="searchText" (input)="search()" (keydown.enter)="onKeydown($event)"
-        class="search-nav form-control" type="text" placeholder="Drink, Restaurant, Bar" name="search"
-        autocomplete="off">
+    <input id="search-bar2" type="text" [(ngModel)]="searchText" (input)="search()" class="search-nav form-control"
+        type="text" placeholder="Drink, Restaurant, Bar" name="search" autocomplete="off">
 </div>
-
-
-
-
 
 
 <div class="masthead">
@@ -20,9 +15,8 @@
 <div>
     <div>
         <div class="col-4">
-            <input id="search-bar" type="text" [(ngModel)]="searchText" (input)="search()"
-                (keydown.enter)="onKeydown($event)" class="search form-control" type="text"
-                placeholder="Drink, Restaurant, Bar" name="search" autocomplete="off" [class.fixed]="fixed"
+            <input id="search-bar" type="text" [(ngModel)]="searchText" (input)="search()" class="search form-control"
+                type="text" placeholder="Drink, Restaurant, Bar" name="search" autocomplete="off" [class.fixed]="fixed"
                 (scroll)="onWindowScroll($event);">
         </div>
     </div>
