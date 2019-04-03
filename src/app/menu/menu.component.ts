@@ -13,6 +13,8 @@ export class MenuComponent implements OnInit {
   drinks: Drink[];
   selectedDrink: Drink;
   isOpen: boolean;
+  searchText: string;
+  filteredDrinks: Drink[];
 
   constructor(private drinkService: DrinkService) {
     this.selectedDrink = { id: 0, name: '', imageUrl: '', videoUrl: '', description: '' };
@@ -21,6 +23,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.getDrinks();
+    this.filteredDrinks = this.drinks;
   }
 
   getDrinks(): void {
@@ -31,6 +34,20 @@ export class MenuComponent implements OnInit {
   onClick(drink: Drink): void {
     if (!this.isOpen) this.selectedDrink = drink;
     this.isOpen = !this.isOpen;
-    //  console.log("selectedDrink: " + this.selectedDrink.name);
+  }
+
+  search(): void {
+    if (!this.searchText)
+      this.filteredDrinks = this.drinks;
+    else
+      this.filteredDrinks = this.drinks
+        .filter(drink => this.caseIncludes(drink.name, this.searchText));
+  }
+
+  caseIncludes(a: string, b: string) {
+    if (a['toUpperCase']().includes(b['toUpperCase']()))
+      return true;
+    else
+      return false;
   }
 }

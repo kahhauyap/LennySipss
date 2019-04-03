@@ -5,21 +5,14 @@
 
 
 <div class="masthead">
-    <div class="masthead-text">
-        Restaurant and Bar Reviews
-    </div>
-
-</div>
-
-
-<div>
-    <div>
-        <div class="col-4">
-            <input id="search-bar" type="text" [(ngModel)]="searchText" (input)="search()" class="search form-control"
-                type="text" placeholder="Drink, Restaurant, Bar" name="search" autocomplete="off" [class.fixed]="fixed"
-                (scroll)="onWindowScroll($event);">
+    <div class="dark-overlay">
+        <div class="masthead-text">
+            Restaurant and Bar Reviews
         </div>
     </div>
+</div>
+
+<div>
     <div *ngIf=" reviews">
         <div *ngFor="let review of filteredReviews; index as i">
             <app-review-card [review]="review" [background]="i % 2 == 0? 'white-back' : 'grey-back'">
@@ -28,5 +21,11 @@
     </div>
 </div>
 <div class="footer">
+    <div class="dark-footer">
+        <a href="https://www.instagram.com/lennysipss/" target="_blank">
+            <img id="logo"
+                src="https://scontent-iad3-1.cdninstagram.com/vp/170fed6b8678cfbb016effc137969204/5D4F0F8B/t51.2885-19/s320x320/49562162_349291239134884_1990166374701334528_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com">
 
+        </a>
+    </div>
 </div>

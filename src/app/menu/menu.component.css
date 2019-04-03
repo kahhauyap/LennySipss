@@ -26,6 +26,30 @@ h1 {
     box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.5);
 }
 
+.search-nav{
+    position: fixed;
+    top: 0;
+    right: 0;  
+    width: 25%;
+    margin-right: 2%;
+    margin-top: 90px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-color: rgba(104, 104, 104, .3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.33);
+    z-index: 9999;
+}
+::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+.form-control:focus {
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.5);
+    transition-duration: .3s;
+}
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 

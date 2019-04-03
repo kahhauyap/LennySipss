@@ -1,10 +1,14 @@
 <h1 style="color:white; text-align:center; padding-top: 50px;">Welcome to the Bar</h1>
 
+<div class="col-4">
+  <input type="text" [(ngModel)]="searchText" (input)="search()" class="search-nav form-control" type="text"
+    placeholder="Drink, Ingredients" name="search" autocomplete="off">
+</div>
 
 <div id="menu">
   <div class="overlay">
     <div *ngIf="drinks">
-      <div *ngFor="let drink of drinks">
+      <div *ngFor="let drink of filteredDrinks">
         <app-card *ngIf="selectedDrink" [drink]="drink" [selectedDrink]="selectedDrink" (click)="onClick(drink)">
         </app-card>
       </div>

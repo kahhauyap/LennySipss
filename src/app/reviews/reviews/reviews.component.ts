@@ -45,16 +45,16 @@ export class ReviewsComponent implements OnInit {
       return false;
   }
 
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(e) {
-    if (window.pageYOffset > 600) {
-      let element = document.getElementById('search-bar');
-      element.classList.add('fixed');
-      console.log(window.pageYOffset)
-    } else {
-      let element = document.getElementById('search-bar');
-      element.classList.remove('fixed');
+  /*
+    @HostListener('window:scroll', ['$event'])
+    onWindowScroll(e) {
+      if (window.pageYOffset > 600) {
+        let element = document.getElementById('search-bar');
+        element.classList.add('fixed');
+      } else {
+        let element = document.getElementById('search-bar');
+        element.classList.remove('fixed');
+      }
     }
-  }
+  */
 }
