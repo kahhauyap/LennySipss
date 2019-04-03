@@ -6,11 +6,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { CarouselComponent } from './carousel/carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
-import { BarComponent } from './bar/bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { MenuComponent } from './menu/menu.component';
-import { ModalComponent } from './modal/modal.component';
-import { CardComponent } from './card/card.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 
@@ -20,11 +16,7 @@ import { FormsModule } from '@angular/forms';
     NavigationBarComponent,
     CarouselComponent,
     AboutComponent,
-    BarComponent,
     HomepageComponent,
-    MenuComponent,
-    ModalComponent,
-    CardComponent,
     ContactComponent
   ],
   imports: [
