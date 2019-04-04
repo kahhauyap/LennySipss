@@ -19,12 +19,21 @@
             </div>
         </div>
     </div>
-    <div *ngIf="filteredReviews">
+    <div *ngIf="filteredReviews.length !== 0; else placehold">
         <div *ngFor="let review of filteredReviews; index as i">
             <app-review-card [review]="review" [background]="i % 2 == 0? 'white-back' : 'grey-back'">
             </app-review-card>
         </div>
     </div>
+
+    <ng-template #placehold>
+        <div class="placeholder">
+            <div class="d-flex" style="margin:auto;">
+                <span class="center-text" style="margin:auto">No results</span>
+            </div>
+        </div>
+    </ng-template>
+
 </div>
 <div class="footer">
     <div class="dark-footer">

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ReviewService } from '../reviews.service';
 import { Review } from '../review';
 
-import { Inject, HostListener } from "@angular/core";
-import { DOCUMENT } from "@angular/platform-browser";
+//import { Inject, HostListener } from "@angular/core";
+//import { DOCUMENT } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-reviews',
@@ -24,6 +24,7 @@ export class ReviewsComponent implements OnInit {
     this.getReviews();
   }
 
+  //HTTP get request for the list of reviews
   getReviews(): void {
     this.reviewService.getReviews()
       .subscribe(reviews => {
@@ -32,14 +33,21 @@ export class ReviewsComponent implements OnInit {
       });
   }
 
+  //Filter the review list based on search term, if no match then return the default list
   search(): void {
     if (!this.searchText)
       this.filteredReviews = this.reviews;
-    else
-      this.filteredReviews = this.reviews
+    else {
+      let tempReviews = this.reviews
         .filter(review => this.caseIncludes(review.drink, this.searchText) || this.caseIncludes(review.location, this.searchText));
+      if (tempReviews.length > 0)
+        this.filteredReviews = tempReviews;
+      else
+        this.filteredReviews = this.reviews;
+    }
   }
 
+  //Check case insensitive if the search term matches a review
   caseIncludes(a: string, b: string) {
     if (a['toUpperCase']().includes(b['toUpperCase']()))
       return true;
