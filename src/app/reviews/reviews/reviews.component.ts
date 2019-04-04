@@ -18,16 +18,18 @@ export class ReviewsComponent implements OnInit {
 
   public fixed: boolean = false;
 
-  constructor(private reviewService: ReviewService, @Inject(DOCUMENT) private doc: Document) { }
-
+  constructor(private reviewService: ReviewService, ) { }
+  //@Inject(DOCUMENT) private doc: Document
   ngOnInit() {
     this.getReviews();
-    this.filteredReviews = this.reviews;
   }
 
   getReviews(): void {
-    this.reviewService.getDrinks()
-      .subscribe(reviews => this.reviews = reviews);
+    this.reviewService.getReviews()
+      .subscribe(reviews => {
+        this.reviews = reviews;
+        this.filteredReviews = this.reviews;
+      });
   }
 
   search(): void {

@@ -3,7 +3,6 @@
         type="text" placeholder="Drink, Restaurant, Bar" name="search" autocomplete="off">
 </div>
 
-
 <div class="masthead">
     <div class="dark-overlay">
         <div class="masthead-text">
@@ -13,7 +12,14 @@
 </div>
 
 <div>
-    <div *ngIf=" reviews">
+    <div class="placeholder" *ngIf="!filteredReviews">
+        <div class="d-flex">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="filteredReviews">
         <div *ngFor="let review of filteredReviews; index as i">
             <app-review-card [review]="review" [background]="i % 2 == 0? 'white-back' : 'grey-back'">
             </app-review-card>
