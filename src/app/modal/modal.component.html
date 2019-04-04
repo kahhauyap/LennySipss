@@ -2,7 +2,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-  aria-hidden="true" (click)=clicked(drink)>
+  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header ">
@@ -10,9 +10,9 @@
           <strong>{{drink.name}}</strong></h5>
       </div>
       <div class="modal-body">
-        <div *ngIf="drink.videoUrl">
-          <video *ngIf="drink" height="400" controls
-            src="https://scontent.cdninstagram.com/vp/86998cd16c541f9d90845475e511b6a8/5CA354C0/t50.2886-16/55825718_2358107740874489_3913041954882977792_n.mp4?_nc_ht=scontent.cdninstagram.com">
+        <div>
+          <video controls
+            src="https://scontent.cdninstagram.com/vp/31ef571c468266f0946b6e069a57fe8a/5CA7F200/t50.2886-16/55825718_2358107740874489_3913041954882977792_n.mp4?_nc_ht=scontent.cdninstagram.com">
           </video>
         </div>
       </div>

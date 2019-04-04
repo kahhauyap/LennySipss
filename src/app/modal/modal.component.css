@@ -47,6 +47,7 @@ hr {
 }
 
 video {
+    height: 400px;
     border: rgb(255, 255, 255, .3) 1px solid;
     -webkit-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.2);
     -moz-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.2);
