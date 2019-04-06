@@ -4,4 +4,5 @@ export class Drink {
     imageUrl: string;
     videoUrl: string;
     description: string;
+    ingredients: any;
 }

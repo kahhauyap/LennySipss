@@ -8,7 +8,7 @@ import { Drink } from '../drink';
 
 export class ModalComponent implements OnInit, OnChanges {
 
-  @Input() drink: Drink;
+  @Input() drink: Drink[];
 
   constructor() {
   }

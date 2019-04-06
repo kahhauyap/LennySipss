@@ -15,13 +15,23 @@
           </video>
         </div>
       </div>
+
       <div class="modal-body">
-        <hr style="background:white;">
-        {{drink.description}}
+
+        <span class="description">
+          {{drink.description}}
+        </span>
+
+        <div class=" ingredients">
+          <h5 class="ingredient-label"> Ingredients </h5><span>
+            <div *ngFor="let ingredient of drink.ingredients">
+              • {{ingredient}}
+            </div>
+          </span>
+        </div>
       </div>
-      <div class="modal-body ingredients">
-        <h5 class="ingredient-label"> Ingredients: </h5>Mango, Tripple Sec, Vodka
-      </div>
+
+
     </div>
   </div>
 </div>
