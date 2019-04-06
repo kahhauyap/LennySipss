@@ -39,3 +39,25 @@
     margin-left: 50px;
     padding-top: 1%;
 }
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .white-back, .grey-back {
+        height: 430px;
+    }
+
+    .drink-pic {
+        height: 340px;
+        width: 340px;
+    }
+    .review {
+    
+    }
+    .header {
+        padding-top: 60px;
+    }
+
+  }

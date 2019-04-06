@@ -11,7 +11,7 @@ export const Reviews: Review[] = [
         drink: 'Matcha Chu Hai',
         location: 'Dock',
         imageUrl: 'https://scontent-iad3-1.cdninstagram.com/vp/277be6d4d53fa636b02b08462d0fab97/5D4F07DA/t51.2885-15/sh0.08/e35/s640x640/53000060_355370911984909_5905545882617499115_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com',
-        review: 'The Dock is the newest restaurant that opened up in the Bushwick area. It’s the combination of three big cuisines, Japanese/Sushi, Ramen, and Thai all under one roof. Their warm and inviting environment makes it the perfect place to grab a drink in the afternoon, they offer multiple options for beer/wine/sake but I chose to try a chu hai. The Matcha Chu Hai is a carbonated matcha flavored cocktail with hints of lemon flavor. To enjoy this cocktail you’d have to have an acquired taste for matcha because it’s carbonated with hints of fruit hidden behind every sip. As someone who is a big matcha fan I love trying any restaurants matcha cocktail if the option is available.'
+        review: 'The Dock is the newest restaurant that opened up in the Bushwick area. It’s the combination of three big cuisines, Japanese/Sushi, Ramen, and Thai all under one roof. Their warm and inviting environment makes it the perfect place to grab a drink in the afternoon. The Matcha Chu Hai is a carbonated matcha flavored cocktail with hints of lemon flavor. To enjoy this cocktail you’d have to have an acquired taste for matcha because it’s carbonated with hints of fruit hidden behind every sip. As someone who is a big matcha fan I love trying any restaurants matcha cocktail if the option is available.'
     },
     {
         drink: 'Calpisake',
