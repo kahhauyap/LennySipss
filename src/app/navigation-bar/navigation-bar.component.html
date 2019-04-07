@@ -1,7 +1,7 @@
 <div class="navbar">
-  <a class="nav-link active" routerLink=""> <span id="nav-title">LENNYSIPSS</span></a>
+  <a class="nav-link" routerLink=""> <span id="nav-title" [routerLinkActive]="['active']">LENNYSIPSS</span></a>
   <div class="nav-right">
-    <a class="nav-link" routerLink="/reviews">Reviews</a>
-    <a class="nav-link" routerLink="/bar">Bar</a>
+    <a class="nav-link" routerLink="/reviews" [routerLinkActive]="['active']">Reviews</a>
+    <a class="nav-link" routerLink="/bar" [routerLinkActive]="['active']">Bar</a>
   </div>
 </div>
