@@ -3,10 +3,10 @@
     -webkit-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.5);
     -moz-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.5);
     box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.5);
+    background: rgba(0, 0, 0, .9);
 }
 
 .modal-body, .modal-header, .modal-footer {
-    background: black;
     color: white;
     text-align: center;
     font-size: 20px;
@@ -69,13 +69,14 @@ video {
     float: left;
     text-align: left;
     border-left: 1px white solid;
-    padding-left: 10px;
+    padding-left: 15px;
     font-family: 'Oswald', sans-serif;
 }
 
 .description {
     width:75%;
     float: left;
+    text-align: left;
     margin-left: 3%;
     margin-right: 3%;
 }

@@ -26,6 +26,10 @@ export class ModalComponent implements OnInit, OnChanges {
         }
     */
   }
+  openModal(): void {
+
+
+  }
   clicked(drink: Drink) {
     console.log(drink.videoUrl);
   }

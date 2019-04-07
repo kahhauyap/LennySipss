@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
   filteredDrinks: Drink[];
 
   constructor(private drinkService: DrinkService) {
-    this.selectedDrink = { id: 0, name: '', imageUrl: '', videoUrl: '', description: '' };
+    this.selectedDrink = { id: 0, name: '', imageUrl: '', videoUrl: '', description: '', ingredients: [] };
     this.isOpen = false;
   }
 
@@ -39,9 +39,14 @@ export class MenuComponent implements OnInit {
   search(): void {
     if (!this.searchText)
       this.filteredDrinks = this.drinks;
-    else
-      this.filteredDrinks = this.drinks
-        .filter(drink => this.caseIncludes(drink.name, this.searchText));
+    else {
+      let tempDrinks = this.drinks
+        .filter(drink => this.caseIncludes(drink.name, this.searchText) || drink.ingredients.includes(this.searchText));
+      if (tempDrinks.length > 0)
+        this.filteredDrinks = tempDrinks;
+      else
+        this.filteredDrinks = this.drinks;
+    }
   }
 
   caseIncludes(a: string, b: string) {

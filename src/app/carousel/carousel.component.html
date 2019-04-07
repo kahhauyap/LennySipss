@@ -1,5 +1,5 @@
 <ngb-carousel *ngIf="drinks" [showNavigationArrows]="!showNavigationArrows"
-  [showNavigationIndicators]="!showNavigationIndicators">
+  [showNavigationIndicators]="showNavigationIndicators">
   <ng-template ngbSlide *ngFor="let drink of drinks">
     <div id="slide">
       <img id="drink-image" [src]="drink.imageUrl" alt="drink slide" (click)="prev()">
