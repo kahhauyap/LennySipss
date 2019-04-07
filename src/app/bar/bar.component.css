@@ -77,3 +77,15 @@ img.bg {
   color: rgb(255, 255, 255);
   text-shadow: rgba(255, 255, 255, .6) 0px 0px 7px;
 }
+
+.footer {
+  height:60px;
+  background: black;
+}
+.dark-footer {
+  height:300px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}

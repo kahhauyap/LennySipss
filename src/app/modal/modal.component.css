@@ -50,7 +50,7 @@ hr {
 }
 
 video {
-    height: 400px;
+    height: 395px;
     width: 700px;
     border: rgb(255, 255, 255, .3) 1px solid;
     -webkit-box-shadow: 0px 0px 19px 1px rgba(255,255,255,0.2);
@@ -74,11 +74,11 @@ video {
 }
 
 .description {
-    width:75%;
+    width:70%;
     float: left;
     text-align: left;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 2%;
 }
 
 @media screen 

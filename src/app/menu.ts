@@ -6,7 +6,7 @@ export const Drinks: Drink[] = [
         imageUrl: 'https://scontent-iad3-1.cdninstagram.com/vp/836e6bea8294a67828dc737b4075e6b0/5D48EC6C/t51.2885-15/sh0.08/e35/s640x640/53091599_127874394959172_472237887129284477_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com',
         videoUrl: './assets/img/lychee-tree.mp4',
         description: 'Asian inspired, the spirit component of the cocktail is sake, and it’s mixed with lychee nectar and hibiscus tea. The sake, lychee, and hibiscus mixes together for a perfectly sweet and tart cocktail.',
-        ingredients: ['Sake', 'Lychee', 'Nectar', 'Hibiscus', 'Tea', 'cherries']
+        ingredients: ['Sake', 'Lychee', 'Nectar', 'Hibiscus Tea', 'Cherries']
     },
     {
         id: 2, name: 'Mango Margarita',

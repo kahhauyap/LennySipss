@@ -21,8 +21,7 @@
     </div>
     <div *ngIf="filteredReviews && filteredReviews.length !== 0; else placehold">
         <div *ngFor="let review of filteredReviews; index as i">
-            <app-review-card [review]="review" [background]="i % 2 == 0? 'white-back' : 'grey-back'">
-            </app-review-card>
+            <app-review-card [review]="review" [background]="i % 2 == 0 ? 'white-back' : 'grey-back'"></app-review-card>
         </div>
     </div>
 
